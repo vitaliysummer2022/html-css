@@ -1,0 +1,64 @@
+body {
+    background: #000 url(img/stars.png);
+}
+div {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+div img:not(.sun img) {
+    animation: turn 6s linear infinite;
+}
+.sun {
+    width: 100px;
+}
+.mercury {
+    width: 100px;
+    height: 100px;
+    animation: orbit 3s linear infinite;
+}
+.mercury img {
+    width: 20px;
+    height: 20px;
+}
+.venus {
+    width: 200px;
+    height: 200px;
+    animation: orbit 4s linear infinite;
+}
+.venus img,
+.earth img {
+    width: 40px;
+    height: 40px;
+}
+.earth {
+    width: 300px;
+    height: 300px;
+    animation: orbit 6s linear infinite;
+}
+.mars {
+    width: 400px;
+    height: 400px;
+    animation: orbit 7s linear infinite;
+}
+.mars img {
+    width: 30px;
+    height: 30px;
+}
+@keyframes turn {
+    from {
+        transform: rotate(360deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+@keyframes orbit {
+    from {
+        transform: rotate(0deg) translateX(100%) rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg) translateX(100%) rotate(-360deg);
+    }
+}
