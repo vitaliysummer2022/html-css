@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}  
+body {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 20px 10px;
+    color: #3e3e3e;
+    font: 18px Arial, Helvetica, sans-serif;
+    background-color: #ffcfc0;
+}
+h1 {
+    margin-bottom: 30px;
+    font-size: 28px;
+    text-align: center;
+}
+.parent {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 90%;
+    margin: 20px auto;
+    padding: 30px;
+    border: 1px solid #3e3e3e;
+    border-radius: 4px;
+    background-color: #fafafa;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+div > *,
+article > * {
+    display: block;
+    padding: 10px;
+    border: 1px solid #3e3e3e;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+article {
+    padding: 0;
+    border: none;
+}
+h2 {
+    background-color: #2772db;
+}
+p {
+    background-color: #ff347f;
+}
+span {
+    background-color: #ffc93c;
+}
+article span {
+    background-color: #00aaa0;
+}
+/*---#2772db---#ff347f---#ffc93c---#00aaa0---*/
+
+ /* {
+    background-color: #00aaa0;
+} */
+
+
+/*
+Объединение селекторов
+
+1. Селектор потомков
+применяется для элемента, который находится внутри элемента-контейнера (на разном уровне) 
+body p {
+    background-color: #00aaa0;
+}
+
+2. Селектор дочерних элементов
+применяется для элемента, который находится внутри элемента-контейнера на первом уровне
+div > p {
+    background-color: #00aaa0;
+}
+
+3. Селектор смежных (соседних) элементов
+применяется для элемента, который находится на одном уровне и сразу же за указанным элементом
+h2 + p {
+    background-color: #00aaa0;
+}
+
+4. Селектор сестринских элементов
+применяется для элемента, который находится на одном уровне после указанного элемента в разной позиции
+h2 ~ span {
+    background-color: #00aaa0;
+}
+
+5. Несколько селекторов в одном элементе
+применяется для элемента, который включает в себя выбранные селекторы
+span.text {
+    background-color: #00aaa0;
+}
+*/
